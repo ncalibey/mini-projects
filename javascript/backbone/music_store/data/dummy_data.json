@@ -1,0 +1,69 @@
+[
+  {
+    "artist": "Tori Kelly",
+    "title": "Unbreakable Smile",
+    "url": "https://itunes.apple.com/us/album/unbreakable-smile-bonus-track/id988591612?v0=WWW-NAUS-ITSTOP100-ALBUMS&l=en&ign-mpt=uo%3D4",
+    "date": "Jun 23, 2015",
+    "cover": "http://a5.mzstatic.com/us/r30/Music5/v4/83/10/90/83109037-0c67-bf88-a2c5-a022b21de7d7/cover170x170.jpeg",
+    "price": 12.99
+  }, {
+    "artist": "Taylor Swift",
+    "title": "1989",
+    "url": "https://itunes.apple.com/us/album/1989/id907242701?v0=WWW-NAUS-ITSTOP100-ALBUMS&l=en&ign-mpt=uo%3D4",
+    "date": "Oct 27, 2014",
+    "cover": "http://a3.mzstatic.com/us/r30/Music5/v4/29/fa/b6/29fab67f-c950-826f-26a0-5eebcd0e262b/cover170x170.jpeg",
+    "price": 12.99
+  },
+  {
+    "artist": "Breaking Benjamin",
+    "title": "Dark Before Dawn",
+    "url": "https://itunes.apple.com/us/album/dark-before-dawn/id975950518?v0=WWW-NAUS-ITSTOP100-ALBUMS&l=en&ign-mpt=uo%3D4",
+    "date": "Jun 23, 2015",
+    "cover": "http://a3.mzstatic.com/us/r30/Music1/v4/20/7d/35/207d354b-c1e7-c199-d363-9269d0be9376/cover170x170.jpeg",
+    "price": 15.99
+  },
+  {
+
+    "artist": "Adele",
+    "title": "25",
+    "url": "https://itunes.apple.com/us/album/dear-agony/id332288664",
+    "date": "Nov 20, 2015",
+    "cover": "http://a2.mzstatic.com/us/r30/Music6/v4/8c/91/5d/8c915d9b-d9e4-f735-1b91-81ca1b6e6312/cover170x170.jpeg",
+    "price": 9.99
+  },
+  {
+    "title":"Unbreakable",
+    "artist":"Janet Jackson",
+    "cover":"http://a4.mzstatic.com/us/r30/Music4/v4/4c/2e/63/4c2e63b5-e7bb-eb16-a6ac-276b8f615705/cover170x170.jpeg",
+    "price": 12.99,
+    "date": "2015-10-02"
+  },
+  {
+    "title":"Blurryface",
+    "artist":"twenty one pilots",
+    "cover":"http://a5.mzstatic.com/us/r30/Music1/v4/05/40/77/05407725-c184-bbc2-c9b0-90f1832adfd7/cover170x170.jpeg",
+    "price": 6.99,
+    "date": "2015-05-15"
+  },
+  {
+    "title":"Kill the Lights",
+    "artist":"Luke Bryan",
+    "cover":"http://a1.mzstatic.com/us/r30/Music1/v4/85/0f/16/850f16cb-6ef5-ac8e-401a-25ddc142fd62/cover170x170.jpeg",
+    "price": 11.99,
+    "date": "2015-08-07"
+  },
+  {
+    "title":"The Book of Souls",
+    "artist":"Iron Maiden",
+    "cover":"http://a4.mzstatic.com/us/r30/Music1/v4/a6/15/7e/a6157e5b-f0d0-1250-9478-646e89548f97/cover170x170.jpeg",
+    "price": 11.99,
+    "date": "2015-09-04"
+  },
+  {
+    "title":"Montevallo",
+    "artist":"Sam Hunt",
+    "cover": "http://a3.mzstatic.com/us/r30/Music5/v4/50/f0/9a/50f09af6-3ae6-171b-cbc3-2c0e01c2704c/cover170x170.jpeg",
+    "price": 9.99,
+    "date": "2014-10-27"
+  }
+]
