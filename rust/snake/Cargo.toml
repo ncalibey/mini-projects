@@ -1,0 +1,14 @@
+[package]
+name = "snake"
+version = "0.1.0"
+authors = ["Nick Calibey <nick.calibey@gmail.com>"]
+edition = "2018"
+
+[dependencies]
+# `rand` will help us determine the random placement of the apple
+rand = "0.7.2"
+# `piston_window` allows us to render a UI
+piston_window = "0.105.0"
+
+# we use `*` to specify the latest version of the package
+# once we see that we can then grab the static version
