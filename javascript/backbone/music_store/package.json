@@ -11,7 +11,7 @@
     "express": "~4.16.0",
     "http-errors": "~1.6.2",
     "jade": "~1.11.0",
-    "morgan": "~1.9.0",
+    "morgan": "~1.9.1",
     "nib": "^1.1.2",
     "stylus": "^0.54.5",
     "underscore": "^1.9.1"
