@@ -1,0 +1,25 @@
+[{
+  "src": "http://placehold.it/1280x1024",
+  "title": "City Lights",
+  "caption": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
+  "created_at": "3/31/15",
+  "likes": 5,
+  "favorites": 2,
+  "id": 1
+}, {
+  "src": "http://placehold.it/1280x1024/ffffff/0066cc",
+  "title": "Happy Dog",
+  "caption": "At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident, similique sunt in culpa qui officia deserunt mollitia animi, id est laborum et dolorum fuga.",
+  "created_at": "4/1/15",
+  "likes": 0,
+  "favorites": 0,
+  "id": 2
+}, {
+  "src": "http://placehold.it/1280x1024/0066cc/ffffff",
+  "title": "Down by the Stream",
+  "caption": "At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident, similique sunt in culpa qui officia deserunt mollitia animi, id est laborum et dolorum fuga.",
+  "created_at": "4/1/15",
+  "likes": 1,
+  "favorites": 1,
+  "id": 3
+}]

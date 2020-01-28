@@ -1,0 +1,188 @@
+@import url("whitespace-reset.css");
+
+body {
+  font: normal 16px Helvetica, Arial, sans-serif;
+  color: #333;
+  background: #181818;
+}
+
+h1 {
+  padding: 0 0 25px 0;
+  font-size: 32px;
+}
+
+h2 {
+  padding: 0 0 15px 0;
+  font-size: 28px;
+}
+
+h3 {
+  padding: 0 0 25px 0;
+  font-size: 24px;
+}
+
+main {
+  width: 980px;
+  padding: 20px;
+  margin: 0 auto;
+  background: #ffffff;
+}
+
+.button {
+  display: inline-block;
+  padding: 10px 15px;
+  font: normal 16px Helvetica, Arial, sans-serif;
+  text-decoration: none;
+  color: #2a8bb8;
+  cursor: pointer;
+  border: none;
+  border-radius: 10px;
+  background: #c5eafa;
+  -webkit-appearance: none;
+}
+
+a.favorite {
+  color: #ffffff;
+  background: #b70e85;
+}
+
+#slideshow {
+  position: relative;
+  margin: 0 0 40px 0;
+}
+
+#slides {
+  position: relative;
+  overflow: hidden;
+  width: 100%;
+  height: 784px;
+}
+
+#slides figure {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 1;
+  margin: 0;
+  width: 100%;
+  height: 784px;
+}
+
+#slides figure + figure {
+  display: none;
+}
+
+#slides img {
+  display: block;
+  width: 100%;
+}
+
+#slides figcaption {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  z-index: 1;
+  padding: 15px;
+  line-height: 140%;
+  color: #fff;
+  background: rgba(0, 0, 0, .7);
+}
+
+#slideshow a.prev,
+#slideshow a.next {
+  position: absolute;
+  top: 50%;
+  z-index: 2;
+  width: 48px;
+  height: 80px;
+  margin-top: -40px;
+  text-indent: -8685px;
+  background: transparent url("../images/icon_pager.png") 0 0 no-repeat;
+}
+
+#slideshow a.prev {
+  left: 20px;
+}
+
+#slideshow a.next {
+  right: 20px;
+  background-position: 100% 0;
+}
+
+section header {
+  position: relative;
+  padding: 0 0 40px 0;
+}
+
+.actions {
+  position: absolute;
+  top: 0;
+  right: 0;
+  z-index: 1;
+}
+
+#comments figure {
+  float: left;
+  margin: 0 20px 0 0;
+}
+
+#comments figure img {
+  width: 48px;
+  border-radius: 100%;
+}
+
+#comments li {
+  padding: 0 0 20px 0;
+}
+
+#comments article header {
+  padding: 8px 0;
+}
+
+#comments article h1 {
+  padding: 0;
+  font-size: 20px;
+}
+
+#comments article header + p {
+  clear: both;
+  padding: 15px 0 0 0;
+  margin: 0 0 0 68px;
+}
+
+#comments li + li {
+  padding-top: 20px;
+  margin-top: 20px;
+  border-top: 1px solid #cecece;
+}
+
+form h4 {
+  padding: 0 0 15px 0;
+  font-size: 18px;
+}
+
+form dt {
+  padding: 0 0 5px 0;
+  font-size: 14px;
+  font-weight: bold;
+}
+form dd {
+  padding: 0 0 15px 0;
+}
+
+input[type="text"],
+input[type="email"] {
+  width: 250px;
+  height: 30px;
+  padding: 5px;
+  font: normal 14px Helvetica, Arial, sans-serif;
+  color: #333;
+  border: 1px solid #cecece;
+  border-radius: 4px;
+}
+
+textarea {
+  border: 1px solid #cecece;
+  border-radius: 4px;
+}

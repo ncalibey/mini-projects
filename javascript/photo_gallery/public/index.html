@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <title>Photo Gallery</title>
+    <meta charset="UTF-8" />
+    <link rel="stylesheet" href="stylesheets/gallery.css" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/4.0.5/handlebars.js"></script>
+    <script src="javascripts/gallery.js"></script>
+  </head>
+  <body>
+    <main>
+      <h1>Amanda Rose's Photos</h1>
+      <div id="slideshow">
+        <div id="slides"></div>
+        <ul>
+          <li><a class="prev" href="#">Prev</a></li>
+          <li><a class="next" href="#">Next</a></li>
+        </ul>
+      </div>
+
+      <section>
+        <header></header>
+
+        <div id="comments">
+          <h3>Comments</h3>
+          <ul></ul>
+
+          <form action="/comments/new" method="post">
+            <fieldset>
+              <input type="hidden" name="photo_id" value="1">
+              <h4>Your Comment</h4>
+              <dl>
+                <dt><label for="name">Your Name</label></dt>
+                <dd><input type="text" name="name" id="name"></dd>
+                <dt><label for="email">Email Address</label></dt>
+                <dd><input type="email" name="email" id="email" placeholder="you@example.com"></dd>
+                <dt><label for="body">Comment</label></dt>
+                <dd><textarea rows="6" cols="40" name="body" id="body"></textarea></dd>
+              </dl>
+              <input type="submit" value="Post Comment" class="button">
+            </fieldset>
+          </form>
+        </div>
+      </section>
+    </main>
+
+    <script id="photos" type="text/x-handlebars">
+      {{#each photos}}
+      <figure data-id="{{id}}">
+        <img src="{{src}}" />
+        <figcaption>{{caption}}</figcaption>
+      </figure>
+      {{/each}}
+    </script>
+
+    <script id="photoInformation" type="text/x-handlebars">
+      <h2>{{title}}</h2>
+      <p><time>Taken on {{created_at}}</time></p>
+      <div class="actions">
+        <a href="/photos/like" data-id="{{id}}" data-property="likes" class="button like">
+          ♡
+          {{#if likes}}
+          {{likes}}
+          {{else}}
+          0
+          {{/if}}
+          Likes
+        </a>
+        <a href="/photos/favorite" data-id="{{id}}" data-property="favorites" class="button favorite">
+          ☆
+          {{#if favorites}}
+          {{favorites}}
+          {{else}}
+          0
+          {{/if}}
+          Favorites
+        </a>
+      </div>
+    </script>
+
+    <script id="comments" type="text/x-handlebars">
+      {{#each comments}}
+      {{> comment}}
+      {{/each}}
+    </script>
+
+    <script id="comment" data-type="partial" type="text/x-handlebars">
+      <li>
+        <article>
+          <figure>
+            <img src="{{gravatar}}" />
+          </figure>
+          <header>
+            <h1>{{name}}</h1>
+            <p><small><time>Posted {{date}}</time></small></p>
+          </header>
+          <p>{{body}}</p>
+        </article>
+      </li>
+    </script>
+  </body>
+</html>

@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <title>Inventory Order Form</title>
+    <meta charset="UTF-8" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/4.0.5/handlebars.js"></script>
+    <link rel="stylesheet" href="form.css" />
+  </head>
+  <body>
+    <main>
+      <form action="#" method="post">
+        <fieldset>
+          <h1>Inventory Order Form</h1>
+          <dl>
+            <dt>Date Ordered</dt>
+            <dd id="order_date"></dd>
+            <dt>
+              <label for="requester_name">Requester Name</label>
+            </dt>
+            <dd>
+              <input name="requester_name" id="requester_name" type="text" />
+            </dd>
+          </dl>
+
+          <h2>Shipping Address</h2>
+          <dl>
+            <dt>
+              <label for="address1">Street Address</label>
+            </dt>
+            <dd>
+              <input name="address1" id="address1" type="text" />
+              <input name="address2" id="address2" type="text" />
+            </dd>
+          </dl>
+          <dl class="partial">
+            <dt>
+              <label for="city">City</label>
+            </dt>
+            <dd>
+              <input name="city" id="city" type="text" />
+            </dd>
+          </dl>
+          <dl class="partial">
+            <dt>
+              <label for="state">State</label>
+            </dt>
+            <dd>
+              <input name="state" id="state" type="text" maxlength="2" />
+            </dd>
+          </dl>
+          <dl class="partial">
+            <dt>
+              <label for="zip">Zipcode</label>
+            </dt>
+            <dd>
+              <input name="zip" id="zip" type="text" maxlength="5" />
+            </dd>
+          </dl>
+
+          <h2>Items to order</h2>
+          <script type="text/x-handlebars" id="inventory_item">
+            <tr>
+              <td>
+                <input type="hidden" name="item_id_{{id}}" value="{{id}}" />
+                <label for="item_name_{{id}}">Name</label>
+                <input name="item_name_{{id}}" type="text" />
+              </td>
+              <td>
+                <label for="item_stock_number_{{id}}">Stock Number</label>
+                <input name="item_stock_number_{{id}}" type="text" maxlength="8" />
+              </td>
+              <td>
+                <label for="item_quantity_{{id}}">Quantity</label>
+                <input name="item_quantity_{{id}}" type="number" value="1" />
+              </td>
+              <td>
+                <a href="#" class="delete">Delete</a>
+              </td>
+            </tr>
+          </script>
+
+          <table id="inventory">
+          </table>
+
+          <button type="button" id="add_item">Add item</button>
+
+          <div class="actions">
+            <input type="submit" value="Order inventory" />
+          </div>
+        </fieldset>
+      </form>
+    </main>
+    <script src="inventory.js"></script>
+  </body>
+</html>
