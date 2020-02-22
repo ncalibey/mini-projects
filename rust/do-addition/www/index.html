@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<script type="module">
+  // All WASM code must be asynchronously loaded.
+  async function init() {
+    // `instantiateStreaming` let's us fetch the WASM code and turn it into a module.
+    const { instance } = await WebAssembly.instantiateStreaming(
+      fetch("./do_addition.wasm")
+    );
+
+    const answer = instance.exports.add(1, 2);
+    console.log(answer);
+  }
+
+  // Calling the function must be the last thing we do.
+  init();
+</script>
