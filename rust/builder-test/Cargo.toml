@@ -1,0 +1,10 @@
+[package]
+name = "builder-test"
+version = "0.1.0"
+authors = ["Nick Calibey <nick.calibey@gmail.com>"]
+edition = "2018"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[dependencies]
+builder = { path = "../builder", version = "0.1.0" }
